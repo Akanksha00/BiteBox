@@ -1,8 +1,26 @@
 * {
     margin: 0;
-    padding: auto;
+    padding: 0;
 }
 
 .sub-logo {
     color: red;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid red;
+}
+
+.nav-link:active {
+    border-bottom: 1px solid red;
+    font-size:16px
+}
+
+table{
+    border:1px solid black;
+}
+
+table th, td{
+    border:1px solid black;
+    padding: 5px;
 }
