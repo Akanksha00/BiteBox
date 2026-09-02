@@ -18,9 +18,14 @@
 
 table{
     border:1px solid black;
+    text-align: center;
 }
 
 table th, td{
     border:1px solid black;
     padding: 5px;
+}
+
+th, td{
+    padding: 10px;
 }
