@@ -1,18 +1,28 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+ 
+    width: 170px;
+ 
+    height: auto;
+ 
 }
 
 .sub-logo {
-    color: red;
+    color: #ff6b00;
 }
 
 .nav-link:hover {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #ff6b00;
 }
 
 .nav-link:active {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #ff6b00;
     font-size:16px
 }
 
