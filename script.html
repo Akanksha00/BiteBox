@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let price = 0;
+        const lostMessage = "Incorrect Answer, Better luck next time!";
+        console.log("Welcome to KBC!");
+         for (let i = 1; i < 4; i++) {
+            let ans = "";
+            switch (i) {
+                case 1:
+                    ans = prompt("What does not grow on a tree according to a popular Hindi saying?\n [a: Money, b: Flower, c: Leaves, d: Fruits] : ");
+                    if (ans === "a") {
+                        price += 1000 * i;
+                        console.log("Correct Answer! Your Prize Money is : ₹" + price);
+                    } else {
+                        console.log(lostMessage);
+                        break;
+                    }
+                    break;
+                case 2:
+                    ans = prompt("Which city is known as the Pink City in India?\n [a: Bangalore, b: Mysore, c: Jaipur, d: Kochi] : ");
+                    if (ans === 'c') {
+                        price += 1000 * i;
+                        console.log("Correct Answer! Your Prize Money is : ₹" + price);
+                    } else {
+                        console.log(lostMessage);
+                        break;
+                    }
+                    break;
+
+                case 3:
+                    ans = prompt("How many states are there in India?\n [a: 28, b: 29, c: 31, d: 30] : ");
+                    if (ans === 'a') {
+                        price += 1000 * i;
+                        console.log("Correct Answer! Your Prize Money is : ₹" + price);
+                        console.log("---------Congratulations! You Won The KBC---------");
+                    } else {
+                        console.log(lostMessage);
+                        break;
+                    }
+                    break;
+
+                default:
+                    console.log("Something went wrong!");
+                    break;
+            }
+
+            if (
+                ans !== 'a' && i === 1
+                ||
+                ans !== 'c' && i === 2
+                ||
+                ans !== 'a' && i === 3) {
+                break; // Stop execution if the answer is wrong
+            }
+        }
+
+    </script>
+</body>
+</html>
