@@ -13,6 +13,9 @@ let exploreMenu = confirm(
     "Would you like to explore our menu?"
 );
 
+ console.log(history.length); // return the number of pages visited
+        // history.back(); // take one step back
+
 if (exploreMenu) {
  
     alert("Great! Let's explore the BiteBox menu.");
