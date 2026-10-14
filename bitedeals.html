@@ -1,136 +1,294 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BiteBox</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/37d1147389.js" crossorigin="anonymous"></script>
-         <link rel="stylesheet" href="assets/style/style.css" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <div>
-                <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.png" alt="Bootstrap" width="90" height="auto">
-                    </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+<head>
+	<title>BiteBox</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/37d1147389.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/style/style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+		<div>
+			<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/images/logo.png" alt="Bootstrap" width="90" height="auto">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link " aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " aria-current="page" href="menu.html">Menu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Bite Deals</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " aria-current="page" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " aria-current="page" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+                            <a href="cart.html" class="cart-icon">
+                                <span class="cart-wrapper">
+                                    <img src="assets/icons/cart.png" alt="Cart Icon" width="22" height="22">
+                                    <span id="cart-count">0</span>
+                                </span>
+                            </a>
+                        </li>
+                        <button type="button" id="theme-toggle" class="theme-toggle">
+                            <span class="theme-icon">☀</span>
+                            <span class="theme-text"> DAY MODE</span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="menu.html">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Bite Deals</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="about.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <footer>
-            <div class="footer-container">
-         <!-- Footer Logo Section -->
-        <section>
-            <img src="assets/images/logo.png" alt="BiteBox Logo" width="180">
-            <p> Delicious food delivered to your doorstep.
-                Fresh, fast and tasty!
-            </p>
+                        
+						<li class="nav-item">
+							<a class="nav-link " aria-current="page" href="login.html"><i
+									class="fa-solid fa-right-to-bracket"></i></a>
+						</li>
+					</ul>
+				</div>
 
-            <a>
-                <img src="assets/icons/contact-facebook.png" alt="Facebook" width="30" height="auto">
-            </a>
+			</nav>
+		</div>
+	</header>
 
-            <a>
-                <img src="assets/icons/contact-instagram.png" alt="Instagram" width="30" height="auto">
-            </a>
+	<!-- Bite Deals Hero Section -->
+	<section id="deals-hero">
+		<h1>Exclusive <span>Deals & Offers</span></h1>
+		<p>Grab the best deals on your favorite dishes. Limited time offers, combo meals, and more!</p>
+	</section>
 
-            <a>
-                <img src="assets/icons/contact-twitter.png" alt="Twitter" width="35" height="35">
-            </a>
-            <a>
-                <img src="assets/icons/contact-youtube.png" alt="YouTube" width="35" height="35">
-            </a>
-        </section>
+	<!-- Featured Deals Section -->
+	<section id="featured-deals">
+		<h2>Today's Top Deals</h2>
 
-        <hr>
+		<div>
+			<article class="deal-card">
+			<span class="deal-badge">Bestseller</span>
+			<img src="assets/images/pizza.png" alt="Family Pizza Combo">
+			<div class="deal-info">
+				<h3>Family Pizza Combo</h3>
+				<p class="deal-description">2 Large Pizzas + Garlic Bread + 2 Cold Drinks</p>
+				<div class="deal-price">
+					<span class="original-price">₹899</span>
+					<span class="discounted-price">₹599</span>
+					<span class="discount">33% OFF</span>
+				</div>
+				<button class="deal-btn">Claim Deal</button>
+			</div>
+		</article>
 
-        <!-- Quick Links -->
-        <section>
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                </u>
-             </section>
+		<article class="deal-card">
+			<span class="deal-badge limited">Limited Time</span>
+			<img src="assets/images/burger.png" alt="Burger Feast">
+			<div class="deal-info">
+				<h3>Burger Feast</h3>
+				<p class="deal-description">4 Chicken Burgers + 4 Fries + 4 Soft Drinks</p>
+				<div class="deal-price">
+					<span class="original-price">₹699</span>
+					<span class="discounted-price">₹449</span>
+					<span class="discount">36% OFF</span>
+				</div>
+				<button class="deal-btn">Claim Deal</button>
+			</div>
+		</article>
 
-                <hr>
+		<article class="deal-card">
+			<img src="assets/images/chicken-biryani.png" alt="Biryani Bonanza">
+			<div class="deal-info">
+				<h3>Biryani Bonanza</h3>
+				<p class="deal-description">2 Chicken Biryani + 1 Veg Biryani + Raita</p>
+				<div class="deal-price">
+					<span class="original-price">₹599</span>
+					<span class="discounted-price">₹399</span>
+					<span class="discount">33% OFF</span>
+				</div>
+				<button class="deal-btn">Claim Deal</button>
+			</div>
+		</article>
 
-                <!-- Customer Service -->
-                <section>
-                    <h3>Customer Service</h3>
-                    <ul>
-                        <li>Track Order</li>
-                        <li>FAQs</li>
-                        <li>Shipping Policy</li>
-                        <li>Return Policy</li>
-                        <li>Terms & Conditions</li>
-                    </ul>
-                </section>
+		<article class="deal-card">
+			<span class="deal-badge weekend">Weekend Special</span>
+			<img src="assets/images/pasta.png" alt="Pasta Party">
+			<div class="deal-info">
+				<h3>Pasta Party</h3>
+				<p class="deal-description">3 Pasta + 2 Garlic Bread + 1 Dessert</p>
+				<div class="deal-price">
+					<span class="original-price">₹499</span>
+					<span class="discounted-price">₹349</span>
+					<span class="discount">30% OFF</span>
+				</div>
+				<button class="deal-btn">Claim Deal</button>
+			</div>
+		</article>
+		</div>
+	</section>
 
-                <hr>
+	<!-- Promo Codes Section -->
+	<section id="promo-codes">
+		<h2>Use Promo Codes & Save More</h2>
+		<div class="promo-container">
+			<article class="promo-card">
+				<div class="promo-code">BITE20</div>
+				<h3>20% OFF</h3>
+				<p>On orders above ₹499</p>
+				<p class="promo-valid">Valid till: 31st Dec 2026</p>
+			</article>
 
-                <!-- Contact Information -->
-                <section>
-                    <h3>Contact Us</h3>
-                    <p>📞 +91 98765 43210</p>
-                    <p>✉️ support@bitebox.com</p>
-                    <p>📍 123 Food Street, Mumbai, Maharashtra 400001 </p>
-                </section>
+			<article class="promo-card">
+				<div class="promo-code">FIRST50</div>
+				<h3>₹50 OFF</h3>
+				<p>First order discount</p>
+				<p class="promo-valid">For new users only</p>
+			</article>
 
-                <hr>
+			<article class="promo-card">
+				<div class="promo-code">WEEKEND</div>
+				<h3>25% OFF</h3>
+				<p>Weekend special</p>
+				<p class="promo-valid">Sat & Sun only</p>
+			</article>
 
-                <!-- Payment Methods -->
-                <section>
-                    <h3>Payment Methods</h3>
-                    <img src="assets/images/visa.png" alt="UPI" width="80" height="auto">
-                    <img src="assets/images/mastercard.png" alt="UPI" width="80" height="auto">
-                    <img src="assets/images/upi.png" alt="UPI" width="80" height="auto">
-                    <img src="assets/images/paytm.png" alt="Paytm" width="80" height="auto">
-                </section>
+			<article class="promo-card">
+				<div class="promo-code">FREEDEL</div>
+				<h3>FREE Delivery</h3>
+				<p>On orders above ₹299</p>
+				<p class="promo-valid">All days</p>
+			</article>
+		</div>
+	</section>
 
-                <hr>
-            </div>
-                <p> © 2026 BiteBox. All Rights Reserved. </p>
+	<!-- Membership Section -->
+	<section id="membership">
+		<div class="membership-content">
+			<h2>BiteBox Premium Membership</h2>
+			<p>Join our exclusive membership and unlock amazing benefits!</p>
+			<ul>
+				<li>✓ Free delivery on all orders</li>
+				<li>✓ 15% extra discount on every order</li>
+				<li>✓ Priority customer support</li>
+				<li>✓ Exclusive members-only deals</li>
+				<li>✓ Birthday special treats</li>
+			</ul>
+			<div class="membership-price">
+				<span class="price-label">Only</span>
+				<span class="price-amount">₹299</span>
+				<span class="price-period">/month</span>
+			</div>
+			<button class="membership-btn">Join Now</button>
+		</div>
+	</section>
 
-    </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <script src ="assets/js/script.js"></script>
-    </body>
+	<!-- Terms Section -->
+	<section id="terms">
+		<h2>Terms & Conditions</h2>
+		<div class="terms-content">
+			<article>
+				<h3>General Terms</h3>
+				<ul>
+					<li>All deals are subject to availability</li>
+					<li>Cannot be combined with other offers</li>
+					<li>Valid for dine-in, takeaway, and delivery</li>
+					<li>Prices may vary by location</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Promo Code Terms</h3>
+				<ul>
+					<li>One promo code per order</li>
+					<li>Minimum order value applies</li>
+					<li>Not valid on already discounted items</li>
+					<li>Valid for a limited time only</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-container">
+			<!-- Footer Logo Section -->
+			<section>
+				<img src="assets/images/logo.png" alt="BiteBox Logo" width="180">
+				<p> Delicious food delivered to your doorstep. Fresh, fast and tasty! </p>
+				<a>
+					<img src="assets/icons/contact-facebook.png" alt="Facebook" width="30" height="auto">
+				</a>
+				<a>
+					<img src="assets/icons/contact-instagram.png" alt="Instagram" width="30" height="auto">
+				</a>
+				<a>
+					<img src="assets/icons/contact-twitter.png" alt="Twitter" width="35" height="35">
+				</a>
+				<a>
+					<img src="assets/icons/contact-youtube.png" alt="YouTube" width="35" height="35">
+				</a>
+			</section>
+			<hr>
+			<!-- Quick Links -->
+			<section>
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="cart.html">Cart</a></li>
+					</u>
+			</section>
+			<hr>
+			<!-- Customer Service -->
+			<section>
+				<h3>Customer Service</h3>
+				<ul>
+					<li>Track Order</li>
+					<li>FAQs</li>
+					<li>Shipping Policy</li>
+					<li>Return Policy</li>
+					<li>Terms & Conditions</li>
+				</ul>
+			</section>
+			<hr>
+			<!-- Contact Information -->
+			<section>
+				<h3>Contact Us</h3>
+				<p>📞 +91 98765 43210</p>
+				<p>✉️ support@bitebox.com</p>
+				<p>📍 123 Food Street, Mumbai, Maharashtra 400001 </p>
+			</section>
+			<hr>
+			<!-- Payment Methods -->
+			<section>
+				<h3>Payment Methods</h3>
+				<img src="assets/images/visa.png" alt="UPI" width="80" height="auto">
+				<img src="assets/images/mastercard.png" alt="UPI" width="80" height="auto">
+				<img src="assets/images/upi.png" alt="UPI" width="80" height="auto">
+				<img src="assets/images/paytm.png" alt="Paytm" width="80" height="auto">
+			</section>
+			<hr>
+		</div>
+		<p> © 2026 BiteBox. All Rights Reserved. </p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+	<!-- <script src="assets/js/script.js"></script> -->
+     <script src="assets/js/bitedeals.js"></script>
+</body>
+
 </html>
